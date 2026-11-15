@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>GiggleByte — Free learning games for curious kids</title>
-<meta name="description" content="GiggleByte makes free, ad-free learning games for families, classrooms and Sunday schools: Chariots of Grace and Rootwords.">
+<meta name="description" content="GiggleByte makes free, ad-free learning games for families, classrooms and Sunday schools: Chariots of Grace, Messengers of Light and Rootwords.">
 <meta name="theme-color" content="#fffaf2">
 <meta property="og:title" content="GiggleByte — Free learning games for curious kids">
-<meta property="og:description" content="Free, ad-free games that teach kindness, honesty, geometry, spelling and care for the planet.">
+<meta property="og:description" content="Free, ad-free games that teach kindness, honesty, coding, geometry, spelling and care for the planet.">
 <meta property="og:image" content="https://gigglebyte-hub.github.io/assets/chariots-story.jpg">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -96,6 +96,9 @@
   .shots { display: flex; gap: .7rem; }
   .shots img { width: 50%; border-radius: 14px; border: 4px solid var(--navy); }
   .game.rootwords .shots img { border-color: #1f4d2c; }
+  .game.messengers .shots img { border-color: #e6c84f; }
+  .players { display: inline-flex; align-items: center; gap: .4rem; font-weight: 700; font-size: .9rem; color: var(--teal); background: color-mix(in srgb, var(--teal) 12%, transparent); padding: .2rem .75rem; border-radius: 999px; margin: 0 0 .6rem; }
+  .players[hidden] { display: none; }
   .game-title { display: flex; align-items: center; gap: .8rem; margin-bottom: .4rem; }
   .game-title img { width: 56px; height: 56px; border-radius: 14px; }
   .game h3 { font-size: 1.8rem; margin: 0; }
@@ -159,7 +162,7 @@
       <div>
         <span class="eyebrow">Free learning games</span>
         <h1>Games that teach.<br><span>Giggles included.</span></h1>
-        <p class="lede">GiggleByte makes small, joyful games that help kids learn the things that matter — from the Ten Commandments to geometry, spelling and caring for our planet. Free to play, with no ads and no sign-ups.</p>
+        <p class="lede">GiggleByte makes small, joyful games that help kids learn the things that matter — from the Ten Commandments and Bible angels to coding, geometry, spelling and caring for our planet. Free to play, with no ads and no sign-ups.</p>
         <div class="cta">
           <a class="btn primary" href="#games">🎮 Play our games</a>
           <a class="btn ghost" href="#families">For parents &amp; teachers</a>
@@ -176,7 +179,7 @@
   <div class="wrap">
     <div class="promise" aria-label="Our promise">
       <div><span class="ico">🚫</span><b>No ads</b><span>Never, not even little ones.</span></div>
-      <div><span class="ico">🔒</span><b>No data collected</b><span>No accounts, no tracking.</span></div>
+      <div><span class="ico">🔒</span><b>No personal data</b><span>No accounts, no tracking — just anonymous visitor and player counts.</span></div>
       <div><span class="ico">📶</span><b>Works offline</b><span>Install once, play anywhere.</span></div>
       <div><span class="ico">💛</span><b>Free for everyone</b><span>Kept free by kind donations.</span></div>
     </div>
@@ -196,6 +199,7 @@
           <div>
             <div class="game-title"><img src="assets/chariots-icon.png" alt="" width="56" height="56"><h3>Chariots of Grace</h3></div>
             <div class="tags"><span class="tag">Ages 7+</span><span class="tag">Bible stories</span><span class="tag">Character &amp; morals</span></div>
+            <p class="players" data-game="chariots-of-grace" hidden></p>
             <p>Ride a chariot from Babylon to the throne of heaven. At each of 12 stops, hear a Bible story and make a real-life choice that tests one of the Ten Commandments.</p>
             <ul>
               <li>Faithful choices earn crowns; wrong ones add burdens</li>
@@ -211,6 +215,29 @@
           </div>
         </article>
 
+        <article class="game messengers">
+          <div class="shots">
+            <img src="assets/messengers-story.jpg" alt="An angel tells the story of Jacob's ladder in Messengers of Light" width="480" height="853" loading="lazy">
+            <img src="assets/messengers-ladder.jpg" alt="The ladder of levels, with stars earned for each angel mission" width="480" height="853" loading="lazy">
+          </div>
+          <div>
+            <div class="game-title"><img src="assets/messengers-icon.png" alt="" width="56" height="56"><h3>Messengers of Light</h3></div>
+            <div class="tags"><span class="tag">Ages 8+</span><span class="tag">Bible stories</span><span class="tag">STEM &amp; careers</span></div>
+            <p class="players" data-game="messengers-of-light" hidden></p>
+            <p>Climb Jacob's ladder and meet the angels of the Bible. Each one brings a hands-on mission that teaches a real STEM skill — from networks and coding to data, AI and cybersecurity.</p>
+            <ul>
+              <li>Program a robot, crack a cipher, read a data map, measure a temple to scale</li>
+              <li>Every level ends with a faith lesson, a personal benefit and a career benefit</li>
+              <li>Read-aloud, captions, a parent dashboard and guides for teachers</li>
+            </ul>
+            <div class="actions">
+              <a class="btn primary small" href="https://gigglebyte-hub.github.io/Messengers-of-Light/">▶ Play free</a>
+              <span class="btn soon small">Google Play — coming soon</span>
+            </div>
+            <p class="fine"><a href="https://gigglebyte-hub.github.io/Messengers-of-Light/privacy.html">Privacy policy</a> · <a href="https://gigglebyte-hub.github.io/Messengers-of-Light/guides/parent-guide.html">Parent guide</a> · <a href="https://gigglebyte-hub.github.io/Messengers-of-Light/guides/teacher-guide.html">Teacher guide</a> · <a href="https://github.com/GiggleByte-Hub/Messengers-of-Light">Source code</a></p>
+          </div>
+        </article>
+
         <article class="game rootwords">
           <div class="shots">
             <img src="assets/rootwords-spell.jpg" alt="Spelling the word LEAF with letter tiles in Rootwords" width="480" height="853" loading="lazy">
@@ -219,6 +246,7 @@
           <div>
             <div class="game-title"><img src="assets/rootwords-icon.png" alt="" width="56" height="56"><h3>Rootwords</h3></div>
             <div class="tags"><span class="tag">Ages 7+</span><span class="tag">Geometry &amp; spelling</span><span class="tag">Sustainability</span></div>
+            <p class="players" data-game="rootwords" hidden></p>
             <p>Explore real patterns in nature — leaf veins, honeycombs, shells and spider webs — and learn a little math, a little spelling and a lot of care for the planet.</p>
             <ul>
               <li>Sketch the pattern, then answer geometry questions about it</li>
@@ -272,18 +300,44 @@
     <div>
       <b>GiggleByte</b><br>
       Free learning games for curious kids.<br>
-      © 2026 GiggleByte
+      © 2026 GiggleByte<br>
+      <small>This site counts visits anonymously with <a href="https://www.goatcounter.com/help/privacy">GoatCounter</a>: no cookies and no personal data.</small>
     </div>
     <ul aria-label="Games">
       <li><a href="https://gigglebyte-hub.github.io/Chariots-of-Grace/">Chariots of Grace</a></li>
+      <li><a href="https://gigglebyte-hub.github.io/Messengers-of-Light/">Messengers of Light</a></li>
       <li><a href="https://gigglebyte-hub.github.io/Rootwords/">Rootwords</a></li>
     </ul>
     <ul aria-label="Policies">
       <li><a href="https://gigglebyte-hub.github.io/Chariots-of-Grace/privacy.html">Chariots of Grace privacy</a></li>
+      <li><a href="https://gigglebyte-hub.github.io/Messengers-of-Light/privacy.html">Messengers of Light privacy</a></li>
       <li><a href="https://gigglebyte-hub.github.io/Rootwords/privacy.html">Rootwords privacy</a></li>
       <li><a href="https://github.com/GiggleByte-Hub">GitHub</a></li>
     </ul>
   </div>
 </footer>
+<script>
+  // Player counters. Each game adds 1 to its GoatCounter tally the first time it is opened on a
+  // device (see js/player-count.js in each game); this shows those tallies. Leave the code empty
+  // to hide the counters. In GoatCounter, turn on "Allow adding visitor counts on your website".
+  (function () {
+    var GOATCOUNTER_CODE = 'gigglebyte-hub';   // same site name as in the games, e.g. 'gigglebyte-hub'
+    if (!GOATCOUNTER_CODE) return;
+    document.querySelectorAll('.players[data-game]').forEach(function (el) {
+      var url = 'https://' + GOATCOUNTER_CODE + '.goatcounter.com/counter/' + encodeURIComponent('/' + el.dataset.game) + '.json';
+      fetch(url).then(function (r) {
+        if (r.status === 404) return { count: 0 };   // nobody counted yet
+        return r.ok ? r.json() : null;
+      }).then(function (d) {
+        if (!d) return;
+        var n = typeof d.count === 'number' ? d.count : parseInt(String(d.count).replace(/[^0-9]/g, ''), 10) || 0;
+        el.textContent = n > 0 ? '👥 ' + n.toLocaleString() + (n === 1 ? ' player' : ' players') : '✨ New — be one of the first players';
+        el.hidden = false;
+      }).catch(function () { /* counter unavailable: keep it hidden */ });
+    });
+  })();
+</script>
+<!-- Website visit count: GoatCounter, no cookies or personal data. It skips localhost by itself. -->
+<script data-goatcounter="https://gigglebyte-hub.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body>
 </html>
